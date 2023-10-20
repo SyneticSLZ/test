@@ -1,0 +1,45 @@
+body { padding: 0; margin: 0 }
+#unity-container { position: absolute }
+#unity-container.unity-desktop { left: 50%; top: 50%; transform: translate(-50%, -50%) }
+#unity-container.unity-mobile { position: fixed; width: 100%; height: 100% }
+/* #unity-canvas { background: linear-gradient(to top,  #e7627d 0%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);} */
+#unity-canvas { background:#1c1a27;}
+
+.unity-mobile #unity-canvas { width: 100%; height: 100% }
+
+#unity-loading-bar { position: absolute; left: 50%; top: 65%; transform: translate(-50%, -50%); display: none; z-index: 7;}
+#unity-logo { width: 154px; height: 130px; background: url('logo.png') no-repeat center }
+#unity-progress-bar-empty { width: 141px; height: 22px; margin-top: 10px; margin-left: 6.5px; background: url('progress-bar-empty-dark.png') no-repeat center; border-radius: 5px;}
+#image 
+{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px; /* Set the width of your image */
+  height: 500px; /* Set the height of your image */
+  background: url('imageBlue.png') no-repeat center;
+  background-size: cover;
+  z-index: 1; /* Ensure it's displayed in front of the background */
+}
+#unity-progress-bar-full { border-radius: 5px; width: 0%; height: 22px; margin-top: 10px; background: url('progress-bar-full-dark.png') no-repeat center }
+/* #unity-footer { position: relative } */
+.unity-mobile #unity-footer { display: none }
+/* #unity-webgl-logo { float:left; width: 204px; height: 38px; background: url('webgl-logo.png') no-repeat center } */
+#unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
+/* #unity-fullscreen-button { cursor:pointer; float: right; width: 38px; height: 38px; background: url('fullscreen-button.png') no-repeat center } */
+#unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
+/* 
+<div style="position: relative; padding-bottom: 56.25%; height: 0;">
+  <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" src="https://itch.io/embed-upload/8627911?"></iframe>
+</div>
+<a href="https://syneticslz.itch.io/jstest">Play jstest on itch.io</a> */
+body {
+    overflow: hidden;
+  }
+  
+body::-webkit-scrollbar {
+    display: none; 
+    /* Hide the scrollbar for Webkit browsers (Chrome, Safari) */
+  }
+  
